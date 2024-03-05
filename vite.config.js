@@ -11,6 +11,10 @@ import Inspect from 'vite-plugin-inspect'
 const pathSrc = path.resolve(__dirname, 'src')
 
 export default defineConfig({
+  base:'/Echartdemo1/',
+  build: {
+    outDir: 'docs' // 打包文件的输出目录
+  },
   resolve: {
     alias: {
       '@': pathSrc,
